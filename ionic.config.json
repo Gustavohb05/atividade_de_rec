@@ -1,0 +1,7 @@
+{
+  "name": "atividade_rec",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

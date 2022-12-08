@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button Href=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>criar_prods</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <form [formGroup]="produtosForm" (submit)="enviar()">
+      <ion-item lines="none">
+        <ion-label position="floating">nome:</ion-label>
+        <ion-input formControlName="nome"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="floating">valor:</ion-label>
+        <ion-input formControlName="valor"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="floating">quantidade:</ion-label>
+        <ion-input formControlName="quantidade"></ion-input>
+      </ion-item>
+      <ion-button padding shape="round" expand="block" type="submit" >Gravar</ion-button>
+    </form>
+
+      
+
+
+  </div>
+
+
+</ion-content>

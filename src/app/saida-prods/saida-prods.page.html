@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button Href="/home.page/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>saida_prods</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+
+    <ion-item *ngFor="let arrayProdutos of arrayProdutos" lines="nome">
+      <ion-label>{{arrayProdutos.nome}}</ion-label>
+      <ion-label>{{arrayProdutos.quantidade}}</ion-label>
+      <ion-icon name="remove-circle"></ion-icon>
+    </ion-item>
+
+  </div>
+
+</ion-content>
